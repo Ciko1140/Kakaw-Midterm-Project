@@ -1,0 +1,27 @@
+{
+  "ruangan": [
+    {"kode": "R1", "kapasitas": 6},
+    {"kode": "R2", "kapasitas": 8},
+    {"kode": "R3", "kapasitas": 10}
+  ],
+  "kelas": [
+    {"kode": "IF101_A", "sks": 2, "jadwal_awal": {"hari": "Senin", "mulai": "07:00", "kode_ruangan": "R1"}},
+    {"kode": "IF101_B", "sks": 2, "jadwal_awal": {"hari": "Senin", "mulai": "07:00", "kode_ruangan": "R2"}},
+    {"kode": "MA102_A", "sks": 3, "jadwal_awal": {"hari": "Senin", "mulai": "07:00", "kode_ruangan": "R3"}},
+    {"kode": "CS201_A", "sks": 2, "jadwal_awal": {"hari": "Senin", "mulai": "07:00", "kode_ruangan": "R1"}}
+  ],
+  "mahasiswa": [
+    {"nrp": "S001", "kelas": ["IF101_A", "MA102_A"], "prioritas": [1, 1]},
+    {"nrp": "S002", "kelas": ["IF101_A", "MA102_A"], "prioritas": [2, 2]},
+    {"nrp": "S003", "kelas": ["IF101_A", "MA102_A"], "prioritas": [1, 1]},
+    {"nrp": "S004", "kelas": ["IF101_A", "CS201_A"], "prioritas": [2, 1]},
+    {"nrp": "S005", "kelas": ["IF101_A", "CS201_A"], "prioritas": [1, 2]},
+    {"nrp": "S006", "kelas": ["IF101_A", "CS201_A"], "prioritas": [2, 1]},
+    {"nrp": "S007", "kelas": ["IF101_B", "MA102_A"], "prioritas": [1, 2]},
+    {"nrp": "S008", "kelas": ["IF101_B", "MA102_A"], "prioritas": [2, 1]},
+    {"nrp": "S009", "kelas": ["IF101_B", "MA102_A"], "prioritas": [1, 2]},
+    {"nrp": "S010", "kelas": ["IF101_B", "CS201_A"], "prioritas": [2, 2]},
+    {"nrp": "S011", "kelas": ["IF101_B", "CS201_A"], "prioritas": [1, 1]},
+    {"nrp": "S012", "kelas": ["IF101_B", "CS201_A"], "prioritas": [2, 2]}
+  ]
+}
