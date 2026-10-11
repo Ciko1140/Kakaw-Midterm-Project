@@ -4,7 +4,9 @@ version = "0.1.0"
 description = "Midterm Project for Artificial Intelligence Concepts Course 2026/2027"
 readme = "README.md"
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "matplotlib>=3.11.2",
+]
 
 [project.scripts]
 kakaw = "kakaw:main"
