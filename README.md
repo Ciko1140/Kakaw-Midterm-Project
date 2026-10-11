@@ -81,26 +81,28 @@ Kakaw adalah sistem penjadwalan kelas mata kuliah paralel dengan menggunakan pen
 ```
 .
 ├── doc
-│   ├── Laporan.pdf
-│   └── Slide.pdf
+│   └── .gitkeep
 ├── src
 │   └── kakaw
-│       ├── __init__.py       # Fungsi main
-│       ├── algorithms        # List algoritma
-│       ├── models            # Model utama 
-│       ├── objectives        # Objective function
+│       ├── __init__.py       # CLI & main
+│       ├── algorithms        # HC, SA, GA
+│       ├── models            # Room, Student, CourseClass
+│       ├── problems          # State, ObjectiveFunction, Problem
 │       └── utils             # Parser
 ├── tests
+│   └── sample.json           # instance Kecil
 ├── pyproject.toml            # Metadata project
 ├── .python-version           # Versi Python
 ├── .gitignore                # Abaikan tracking file atau direktori
 ├── uv.lock
+├── PROBLEM-DETAIL.md                # Spesifikasi formal problem
+├── PROBLEM-DESCRIPTION.md          # Penjelasan problem
 └── README.md 
 
 ```
 
 ## Requirements
-- Python Versions 3.14.2 or newer
+- Python Versions 3.14 or newer
 - uv Versions 0.12 or newer (recommended package manager)
 
 ## Installation
@@ -123,8 +125,10 @@ uv run kakaw --test tests/sample.json --algorithm steepest-hc --plot output.png
 ```
 ### Simulated Annealing
 ```sh
-uv run kakaw --test tests/sample.json --algorithm simulated --plot output.png
+uv run kakaw --test tests/sample.json --algorithm simulated --plot output.png --seed 42
 ```
+`output.png` berisi kurva `F` terhadap `evaluations` untuk run tersebut.
+
 ### Genetic Algorithm
 ```sh
 uv run kakaw --test tests/sample.json --algorithm genetic --plot output.png
