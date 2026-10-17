@@ -1,6 +1,5 @@
 import argparse
 
-from kakaw.algorithms import SimpleHillClimbing
 from kakaw.models.constants import DAYS, minutes_to_hhmm
 from kakaw.problems import Problem
 from kakaw.utils.parser import Parser
